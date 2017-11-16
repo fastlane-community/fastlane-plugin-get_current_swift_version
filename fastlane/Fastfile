@@ -1,0 +1,4 @@
+lane :test do
+  swift_version = get_current_swift_version
+  UI.message "App is being compiled with Swift #{swift_version}"
+end
