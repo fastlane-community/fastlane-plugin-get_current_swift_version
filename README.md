@@ -12,13 +12,18 @@ bundle exec fastlane add_plugin get_current_swift_version
 
 ## About get_current_swift_version
 
-Get currently using Xcode toolchain's Swift version
+Get current Xcode toolchain's Swift version.
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+```ruby
+lane :test do
+  swift_version = get_current_swift_version
+  UI.message "App is being compiled with Swift #{swift_version}"
+end
+```
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+Try it by cloning the repo, running `bundle exec fastlane install_plugins` and `bundle exec fastlane test`.
 
 ## Run tests for this plugin
 
