@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 't@thi.im'
 
   spec.summary       = "Get currently using Xcode toolchain's Swift version"
-  spec.homepage      = "https://github.com/thii/fastlane-plugin-get_current_swift_version"
+  spec.homepage      = "https://github.com/fastlane-community/fastlane-plugin-get_current_swift_version"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
